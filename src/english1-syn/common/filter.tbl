@@ -1,0 +1,8 @@
+table T_1: [core] => [verb, mdr, arg, nc, pc]
+               \1 => \1     ()   ()   ()  () .
+
+table T_2: [core] => [noun, mdr, fnc, nc, pc]
+               \1 =>  \1    ()   ()   ()  () .
+
+table T_3: [core] => [adj,  mdr, mdd, nc, pc]
+               \1 => \1     ()   ()   ()  () .

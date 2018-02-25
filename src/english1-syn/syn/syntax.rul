@@ -1,0 +1,45 @@
+#ST_S = {([cat: _] {DET+N MAIN+FV})}
+ST_S = {([cat: _] {MAIN+FV})}
+
+
+#DET+N {MAIN+FV FV+MAIN S+IP}
+
+#[noun: _, cat: (N' _)]
+#[noun: _, cat: (N)]
+
+#setref(nw.noun SS.noun)
+#cancel(N')
+#acopy(nw.sem SS.sem)
+
+MAIN+FV {FV+MAIN, S+IP}
+
+#[noun: _, cat: (NP), sem: (CPL _)]
+[noun: _, cat: (NP)]
+[verb: _, cat: (NP' _ v)]
+
+acopy(SS.noun nw.arg)
+acopy(nw.verb SS.fnc)
+cancel(NP')
+copy(nw)
+
+#FV+MAIN {DET+N FV+MAIN, S+IP}
+FV+MAIN {FV+MAIN, S+IP}
+
+[verb: _, cat: (NP' _ v)]
+[noun: _, cat: (_ NP)]
+
+acopy(SS.verb nw.fnc)
+acopy(nw.noun SS.arg)
+cancel(NP')
+copy(nw)
+
+S+IP {}
+
+[cat: (v)]
+[cat: (v' decl)]
+
+ecopy(decl SS.cat)
+
+ 
+ST_F = {([cat: (decl)] rp_S+IP)}
+

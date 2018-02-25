@@ -1,0 +1,24 @@
+string  sur	
+        core
+        noun
+        verb
+        adj
+list    cat	
+        sem	
+        cas
+        .visible = false
+        seg
+        .visible = false
+        ontology
+table   allo
+        flx
+        syn	
+list    mdr
+        mdd
+        fnc
+        arg
+        nc
+        pc
+int     prn
+        wrd
+string	dbg

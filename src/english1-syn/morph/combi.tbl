@@ -1,0 +1,24 @@
+# The file combi.tbl deals with the phenomenon of inflection
+
+table C_book: [cat, sem] [sur] => [cat, sem]
+              (sn)  (sg) s     => (pn)  (pl) . 
+
+table C_wolf: [cat,   sem] [sur] => [cat, sem]
+              (nstem) ()   es    => (pn)  (pl) . 
+
+table C_learn: [cat,     sem]   [sur] => [cat,    sem]
+               (n-s3' v) (pres) s     => (ns3' v) (pres) ;
+                                ed    => (n' v)   (past/perf) ;
+                                ing   => (be)     (prog) .
+
+table C_give: [cat,     sem]   [sur] => [cat,    sem]
+              (n-s3' v) (pres) s     => (ns3' v) (pres) .
+              (vstem)   ()     ing   => (be)     (prog) .
+
+table C_quick: [cat, sem]  [sur] => [cat, sem]
+               (adj) (pos) ly    => (adv) () ;
+                           er    => (adj) (comp) ;
+                           est   => (adj) (sup) .
+
+
+

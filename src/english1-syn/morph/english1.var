@@ -1,0 +1,2 @@
+string STS <- {det v sn pn adj nstem vstem snp pnp decl}
+string STF <- {det v sn pn adj adv ns3' n' be snp pnp decl}

@@ -1,0 +1,13 @@
+package:	de.uni_erlangen.linguistik.lag.jslim.lag.operations
+
+setref:         SetRefOperation
+cancel:		CancelOperation
+acopy:		ACopyOperation
+ecopy:		ECopyOperation
+sappend:	StringAppendOperation
+table:		TableLookupOperation
+copy:		CopyOperation
+set:		SetOperation
+
+
+

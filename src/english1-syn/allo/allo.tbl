@@ -1,0 +1,33 @@
+# Within the file allo.tbl allo rules are specified using regular expressions.
+# The input of such an allo rule is the lemma of an elementary lexicon entry from
+# which one or more allomorphs are derived.
+
+table A_learn: [sur] => [sur, cat,   sem]
+               /.+/  => /$0/  (n-s3' v) (pres) .
+
+table A_give:  [sur]            => [sur,     cat,      sem]
+               /(.+)(i)(.+)(e)/ => /$0/      (n-s3' v) (pres)      ;
+                                => /$1$2$3/  (vstem)   ()          ;
+                                => /$1a$3$4/ (n' v)    (past/perf) .
+
+table A_man:   [sur]        => [sur,   cat, sem]
+               /(.*)a(.*)/  => /$0/    (sn) (sg) ;
+                            => /$1e$2/ (pn) (pl) .
+
+table A_book:  [sur]  => [sur, cat,  sem]
+               /(.+)/ => /$1/  (sn)  (sg) .
+
+table A_wolf:  [sur]   => [sur, cat,    sem]
+               /(.+)f/ => /$0/  (sn)    (sg) ;
+                       => /$1v/ (nstem) () .
+
+table A_math:  [sur]  => [sur cat, sem]
+               /(.+)/ => /$0/ (sn) (sg) . 
+
+table A_quick: [sur]  => [sur, cat,  sem]
+               /(.*)/ => /$1/  (adj) (pos) .
+
+table A_null:  [sur]  => [sur]
+               /(.+)/ => /$1/ .
+
+

@@ -1,0 +1,75 @@
+# -*- coding: utf-8 -*-
+# auto generated file (AlloProcessor)
+# source: /semantic-parser/src/english1-syn/allo/allo.all
+# lcdate: 2017-11-15 10:12:15
+
+
+[sur: ".", cat: (v' decl)]
+
+# verbs
+!template[cat: (n' v), syn: T_1]
+![sur, core, ontology]
+# BeingAction
+be be (BeingAction)
+# DrinkingAction
+drink drink (DrinkingAction)
+# EatingAction
+eat eat (EatingAction)
+# ErgativeAction
+break break (ErgativeAction)
+finish finish (ErgativeAction)
+open open (ErgativeAction)
+stop stop (ErgativeAction)
+# SleepingAction
+sleep sleep (SleepingAction)
+
+# nouns + pronouns
+!template[cat: (sn), syn: T_2]
+![sur, core, ontology]
+# Person
+baby baby (Person)
+boy boy (Person)
+daddy daddy (Person)
+i i (Person)
+man man (Person)
+mommy mommy (Person)
+you you (Person)
+# Animal
+cat cat (Animal)
+cow cow (Animal)
+fish fish (Animal)
+horse horse (Animal)
+# BodyPart
+back back (BodyPart)
+eye eye (BodyPart)
+hair hair (BodyPart)
+hand hand (BodyPart)
+# ClosedLocation
+bed bed (ClosedLocation)
+house house (ClosedLocation)
+# OpenLocation
+bridge bridge (OpenLocation)
+# Clothing
+hat hat (Clothing)
+shoe shoe (Clothing)
+# Furniture
+bed bed (Furniture)
+chair chair (Furniture)
+# Toy || Toy + Transport
+ball ball (Toy)
+car car (Toy Transport)
+toy toy (Toy)
+train train (Toy Transport)
+# Beverage
+juice juice (Beverage)
+milk milk (Beverage)
+tea tea (Beverage)
+# Food
+apple apple (Food)
+cake cake (Food)
+egg egg (Food)
+fish fish (Food)
+orange orange (Food)
+pie pie (Food)
+
+# eog: 2017-11-15 10:12:15

@@ -1,0 +1,1659 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#"
+     xml:base="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasAgent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasAttributte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasAttributte"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasMainAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasMainAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasManner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasManner">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasOptionalPatient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasOptionalPatient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#isPOSof"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPatient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPatient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPlace">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#isPOSof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#isPOSof"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AbstractThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AbstractThing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#DomainOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Action">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#MainVerb"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AbstractThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Adjective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Adjective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PartOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Adverb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Adverb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PartOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Animal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Organism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AnimatedThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AnimatedThing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ConcreteThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Attribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Attribute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AbstractThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AudibleAttribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AudibleAttribute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AuxiliaryVerb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AuxiliaryVerb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Verb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#BeingAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#BeingAction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AuxiliaryVerb"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#BeingFrame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#BeingFrame">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasAgent"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Animal"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Beverage"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Clothing"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Food"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Furniture"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Toy"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Transport"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasAttributte"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AudibleAttribute"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorAttributte"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#GustatoryAttribute"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#OdorousAttribute"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PositionAttributte"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ShapeAttributte"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#TactileAttribute"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasMainAction"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#BeingAction"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Frame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Beverage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Beverage">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Noun"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Nourishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#BodyPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#BodyPart">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#InnanimatedThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ClosedLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ClosedLocation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Clothing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Clothing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorAttributte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorAttributte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#VisibleAttributte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorfulSemantics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorfulSemantics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#LinguisticOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ConcreteThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ConcreteThing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#DomainOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Conjunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Conjunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PartOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#DescribeCSPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#DescribeCSPart">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Adjective"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorfulSemantics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Distance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Distance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Measure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#DomainOntology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#DomainOntology"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#DrinkingAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#DrinkingAction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#MainVerb"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#EatingAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#EatingAction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#MainVerb"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeAction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeVerb"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeFrame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeFrame">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasAgent"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Animal"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Object"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasMainAction"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeVerb"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasOptionalPatient"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Animal"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Beverage"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#BodyPart"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ClosedLocation"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Clothing"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Food"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Furniture"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#NatureElement"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#NaturePhenomenon"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#OpenLocation"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Toy"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Transport"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Vegetal"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Frame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeVerb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeVerb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Verb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PsicologicalFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#FallingAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#FallingAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Food">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Noun"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Nourishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Frame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Frame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#LinguisticOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Furniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#GroupAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#GroupAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#GustatoryAttribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#GustatoryAttribute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#InnanimatedThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#InnanimatedThing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ConcreteThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Interjection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Interjection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PartOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#InterrogativePronoun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#InterrogativePronoun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Pronoun"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#LinguisticOntology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#LinguisticOntology"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#LinkingVerb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#LinkingVerb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Verb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#LiquidIngestionFrame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#LiquidIngestionFrame">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasAgent"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Animal"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasMainAction"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#DrinkingAction"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPatient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Beverage"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPlace"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ClosedLocation"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#OpenLocation"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Frame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#InnanimatedThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#MainVerb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#MainVerb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Verb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Measure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Measure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AbstractThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ModalVerb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ModalVerb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Verb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Motivation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Motivation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PsicologicalFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#NatureElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#NatureElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#InnanimatedThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#NaturePhenomenon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#NaturePhenomenon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#InnanimatedThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Noun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Noun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PartOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Nourishment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Nourishment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#InnanimatedThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Object">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#InnanimatedThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#OdorousAttribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#OdorousAttribute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#OpenLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#OpenLocation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Organism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Organism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AnimatedThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PartOfSpeech -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PartOfSpeech">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#LinguisticOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Pronoun"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Noun"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Organism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PersonalPronoun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PersonalPronoun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Pronoun"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PositionAttributte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PositionAttributte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#VisibleAttributte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PossessivePronoun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PossessivePronoun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Pronoun"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Preposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Preposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PartOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Pronoun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Pronoun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PartOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PsicologicalFeature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PsicologicalFeature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AbstractThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Quantity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Quantity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Measure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ReflexiveVerb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ReflexiveVerb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Verb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Routine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Routine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ShapeAttributte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ShapeAttributte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#VisibleAttributte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#SizeAttribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#SizeAttribute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#VisibleAttributte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#SleepingAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#SleepingAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#SleepingFrame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#SleepingFrame">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasAgent"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Animal"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasMainAction"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#SleepingAction"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPlace"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ClosedLocation"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Furniture"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#OpenLocation"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Frame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#SocialEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#SocialEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#SolidIngestionFrame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#SolidIngestionFrame">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasAgent"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Animal"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasMainAction"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#EatingAction"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPatient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Food"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPlace"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ClosedLocation"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#OpenLocation"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Frame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#TactileAttribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#TactileAttribute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Measure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Toy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Toy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Vegetal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Vegetal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Organism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Verb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Verb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PartOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#VisibleAttributte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#VisibleAttributte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#WhatCSPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#WhatCSPart">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Noun"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Pronoun"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorfulSemantics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#WhatDoingCSPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#WhatDoingCSPart">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Verb"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorfulSemantics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#WhereCSPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#WhereCSPart">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Noun"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorfulSemantics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#WhoCSPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#WhoCSPart">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hasPOS"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Noun"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Pronoun"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorfulSemantics"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#baby -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#baby">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#back -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#back">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#BodyPart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ball -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ball">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Toy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#be -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#be">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AuxiliaryVerb"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#BeingAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#bed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#bed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ClosedLocation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Furniture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#big -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#big">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#SizeAttribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#blue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#blue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorAttributte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#book -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#book">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#box -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#box">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#boy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#boy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#break -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#break">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeAction"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeVerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#bridge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#bridge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#OpenLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#cake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#cake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#car -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#car">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Toy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#cat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#cat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Animal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#chair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#chair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Furniture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#cow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#cow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Animal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#daddy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#daddy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Noun"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#drink -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#drink">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#DrinkingAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#eat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#eat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#EatingAction"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#MainVerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#egg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#egg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#eye -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#eye">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#BodyPart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#finish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#finish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeAction"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeVerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#fish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#fish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Animal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#five -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#five">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Quantity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#four -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#four">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Quantity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#green -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#green">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorAttributte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#BodyPart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#BodyPart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Clothing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#have -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#have">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#AuxiliaryVerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#horse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#horse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Animal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#hot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#TactileAttribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#house -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#house">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ClosedLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#i -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#i">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PersonalPronoun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#in -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#in">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PositionAttributte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#juice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#juice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Beverage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#man -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#man">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#milk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#milk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Beverage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#mommy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#mommy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Noun"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#my -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#my">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PossessivePronoun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#nice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#nice"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#off -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#off"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#on -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#on"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#one -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#one">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Quantity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#open -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#open">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeAction"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeVerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#orange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#orange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorAttributte"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#out -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#out">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PositionAttributte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#pie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#pie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#red -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#red">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorAttributte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#right -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#right">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PositionAttributte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#round -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#round">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ShapeAttributte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#shoe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#shoe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Clothing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#sleep -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#sleep">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#SleepingAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#stop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#stop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeAction"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ErgativeVerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#tea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Beverage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#three -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#three">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Quantity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#toy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#toy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Toy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#train -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#train">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Toy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#two -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#two">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Quantity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#up -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#up">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PositionAttributte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#want -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#want">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#InterrogativePronoun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#what -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#what">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#InterrogativePronoun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#where -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#where">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#InterrogativePronoun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#yellow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#yellow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#ColorAttributte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#you -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#you">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#PersonalPronoun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Adjective"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Adverb"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Conjunction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Interjection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Noun"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Preposition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Pronoun"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Verb"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#BodyPart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#NatureElement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#NaturePhenomenon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Nourishment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Object"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#DescribeCSPart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#WhatCSPart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#WhatDoingCSPart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#WhereCSPart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#WhoCSPart"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Distance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Quantity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Time"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#GroupAction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#Routine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26#SocialEvent"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

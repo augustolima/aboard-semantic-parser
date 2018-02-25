@@ -1,0 +1,87 @@
+# -*- coding: utf-8 -*-
+# auto generated file (AssistiveAlloProcessor)
+# source: /semantic-parser/src/english1-syn/allo/allo.all
+# lcdate: 2018-02-24 11:15:14
+
+[sur: ".", cat: (v' decl)]
+
+# verbs
+!template[cat: (n' v), syn: T_1]
+![sur, core, ontology]
+fish fish ()
+sleep sleep (SleepingAction )
+finish finish ()
+open open ()
+be be (BeingAction )
+stop stop ()
+eat eat (EatingAction )
+drink drink (DrinkingAction )
+break break ()
+fish fish ()
+
+# nouns
+!template[cat: (sn), syn: T_2]
+![sur, core, ontology]
+fish fish (Food Animal )
+shoe shoe (Clothing Object )
+book book (Object )
+baby baby (Person )
+orange orange (Food )
+train train (Transport Object Toy Object )
+dog dog (Animal )
+juice juice (Beverage )
+cat cat (Animal )
+fish fish (Food Animal )
+daddy daddy (Person )
+two two ()
+box box (Object )
+one one ()
+house house (ClosedLocation Location )
+man man (Person )
+tea tea (Beverage )
+truck truck (Transport Object Toy Object )
+three three ()
+boy boy (Person )
+hair hair ()
+toy toy (Toy Object )
+milk milk (Beverage )
+apple apple (Food )
+bridge bridge (OpenLocation Location )
+chair chair (Furniture Object )
+back back ()
+horse horse (Animal )
+four four ()
+egg egg (Food )
+hand hand ()
+mommy mommy (Person )
+eye eye ()
+five five ()
+ball ball (Toy Object )
+cow cow (Animal )
+cake cake (Food )
+water water (Beverage )
+bed bed (Furniture Object ClosedLocation Location )
+car car (Transport Object Toy Object )
+pie pie (Food )
+hat hat (Clothing Object )
+orange orange (Food )
+i i (Person )
+he he (Person )
+you you (Person )
+she she (Person )
+we we (Person )
+
+# adjectives
+!template[cat: (adj), syn: T_3]
+![sur, core, ontology]
+orange orange (Attribute )
+orange orange (Attribute )
+round round (Attribute )
+blue blue (Attribute )
+yellow yellow (Attribute )
+hot hot (Attribute )
+red red (Attribute )
+big big (Attribute )
+green green (Attribute )
+
+# eog: 2018-02-24 11:15:14

@@ -1,0 +1,20 @@
+string N   <- {sn, pn}
+       N'  <- {sn' pn'}
+       NP  <- {sn, pn, snp, pnp}
+       NP' <- {ns3' n-s3' n' d' a'}
+       CPL <- {def indef pl}
+
+# constraint for rule DET+N
+constraint
+N'    => N:
+sn'   => {sn} .
+pn'   => {pn} .
+
+# constraint for rules MAIN+FV and FV+MAIN
+constraint
+NP'    => NP:
+n'     => {snp, pnp, sn, pn} .
+ns3'   => {snp, sn} .
+n-s3'  => {pnp, pn} .
+d'     => {snp, pnp, sn, pn} .
+a'     => {snp, pnp, sn, pn} .

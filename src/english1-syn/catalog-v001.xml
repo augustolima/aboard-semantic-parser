@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1515506509585" name="duplicate:http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26" uri="assistive.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1515506509585" name="duplicate:http://www.semanticweb.org/nmf/ontologies/2017/11/untitled-ontology-26" uri="assistive2.owl"/>
+    </group>
+</catalog>
