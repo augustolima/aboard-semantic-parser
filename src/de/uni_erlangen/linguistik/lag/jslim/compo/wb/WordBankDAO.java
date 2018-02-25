@@ -31,9 +31,9 @@ public class WordBankDAO {
 
     public WordBankDAO() throws JSLIMException {
         this.connection = connect();
-//        this.dropTables();
-//        this.createTables();
-//        this.store();
+        this.dropTables();
+        this.createTables();
+        this.store();
     }
 
     /**
